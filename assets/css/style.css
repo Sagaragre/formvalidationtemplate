@@ -100,15 +100,14 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%; 
+  width: 64%; 
   margin: 0 auto;
 }
+
+* { box-sizing: border-box; }
 /*=================================
   Header styling starts here
 =================================*/
-
-
-
 
 
 
@@ -119,13 +118,296 @@ li {
 /*=================================
   main styling starts here
 =================================*/
+.welcome {
+  padding: 172px 0 90px;
+  background-color: #763E79;
+  background-image: linear-gradient(to right, #4F4D76, transparent);
+}
+
+.welcome .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.welcomeleft { flex-basis: 51.18%; }
+
+h2 {
+  color: #FFF;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.welcomeright {
+  padding: 0 0 1% 4.3%;
+  border-left: 2px solid #6E527E;
+  flex-basis: 48.43%;
+}
+
+.welcomeright p {
+  color: #8D82AF;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.welcomeright a,
+.magnaleft a {
+  padding: 15px 36px;
+  border-radius: 50px 50px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: background-color 550ms ease-in, color 550ms ease-in;
+}
+
+.welcomeright a { 
+  margin-top: 24px;
+  background-color: #49BD8B;
+  color: #FCFDFA;
+}
+
+.magnaleft a {
+  border: 2px solid #E8E8E8;
+  color: #AFAFAF;
+}
+
+.welcomeright a:hover,
+.magnaleft a:hover {
+  background-color: #4F4D76;
+  color: #49BD8B;
+}
+/* =========welcome styling end here============== */
+.magna-container {
+  padding: 72px 0;
+  border-bottom: 2px solid #E4E4E4;
+}
+.magna-container .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.magnaleft { 
+  padding-right: 24px;
+  flex-basis: 51%;
+}
+
+.magnaright {
+  border-left: 2px solid #E4E4E4;
+  flex-basis: 47.14%;
+}
+
+.magnaleft h3 {
+  color: #666666;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.magnaleft p {
+  margin: 35px 0 28px;
+  color: #76797C;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.magnaright li {
+  padding-bottom: 31px;
+  display: block;
+  color: #76797C;
+  font-size: 14px;
+}
+
+.magnaright li:before {
+  content: '\f00c';
+  padding: 0 3% 0 9.5%;
+  color: #49BD8B;
+  font-family: 'Fontawesome';
+}
+/* ============== magna-container styling end here ================ */
+.ipsummagna-container {
+  padding: 72px 0;
+  background-color: #FAFAFA;
+}
+
+.ipsummagna-container .wrapper {
+  width: 65.63%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.details-container li {
+  margin-bottom: 45px;
+  display: flex;
+  background-color: #FFF;
+  justify-content: space-between;
+}
+
+.details-container .image { width: 40.12%; }
+
+.details-container li div { 
+  padding: 0 3%;
+  flex-basis: 58.67%;
+}
+
+.details-container .info h4 {
+  padding-top: 82px;
+  color: #6C6666;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.details-container .info p {
+  padding: 24px 0 27px;
+  color: #BDB1A7;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.info a,
+.ipsummagna-container .wrapper > a,
+form > .send {
+  padding: 11px 34px;
+  border: 2px solid #E8E8E8;
+  border-radius: 50px 50px;
+  color: #656666;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: background-color 550ms ease-in, color 550ms ease-in;
+}
+
+.info a:hover,
+.ipsummagna-container .wrapper > a:hover,
+form > .send:hover {
+  background-color: #4F4D76;
+  color: #FFF;
+}
+/* ============= ipsummagna-container styling emds here ============== */
+.orci-container {
+  padding: 69px 0;
+  border-bottom: 2px solid #E4E4E4;
+}
+
+.orci-container .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.orcileft { flex-basis: 50.44%; }
+
+.orcileft h3 {
+  color: #666666;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.orcileft p {
+  margin: 35px 0 34px;
+  color: #898EA1;
+  font-size: 14px;
+}
+
+form { width: 93.8%; }
+.out {
+  width: 92.5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.out2 { margin-left: 4%; }
+
+.err {
+  display: block;
+  color:red;
+  font-size: 13px;
+}
+
+.msgerr {
+  display: none;
+  color:red;
+  font-size: 13px;
+}
+
+.firstname,
+.email {
+  margin-bottom: 6px;
+}
+
+.email-err { padding-left: 4%; }
+
+.firstname,
+.email {
+  padding: 10px 13px;
+  border: 1px solid #E4E4E4;
+  color: #898EA1;
+  font-size: 15px;
+}
+
+.email { margin-left: 4%;}
+
+.message {
+  width: 94.4%;
+  padding: 16px 0 0 13px;
+  margin: 28px 0 6px;
+  border: 1px solid #E4E4E4;
+  font-size: 15px;
+}
+
+.send { margin-top: 28px; }
+
+.socialmedia { 
+  padding: .5% 4% 0;
+  display: flex;
+  border-left: 2px solid #E4E4E4;
+  flex-direction: column;
+  flex-basis: 48.14%;
+}
+
+.socialmedia a {
+  padding-bottom: 16px;
+  display:block;
+}
+
+.socialmedia li,
+.socialmedia a {
+  color: #9A9FA4;
+  font-size: 14px;
+}
+
+.socialmedia li a:hover { color: #6F3E79; }
+
+.socialmedia > li > a:before {
+  padding-right: 3%;
+  color: #4CBF91;
+  font-family: 'FontAwesome';
+}
+
+.socialmedia > li > a:hover:before { color: #6F3E79; }
+
+.socialmedia > :nth-child(5) a {
+  display: inline-block;
+  text-indent: -9999px;
+}
 
 
+.socialmedia > :first-child a:before { content: '\f099'; }
+.socialmedia > :nth-child(2) a:before { content: '\f082'; }
+.socialmedia > :nth-child(3) a:before { content: '\f16d'; }
+.socialmedia > :nth-child(4) a:before { content: '\f0e0'; }
 
+.socialmedia > :nth-child(5) a:before {
+  content: '\f015';
+  left: 0;
+  float: left;
+  text-indent: 0;
+}
 
-
-
-
+.socialmedia span { padding-left: 3%; }
 
 /*=================================
   main styling ends here
@@ -134,21 +416,133 @@ li {
 /*=================================
   footer styling starts here
 =================================*/ 
+footer {
+  padding: 55px 0;
+  background-color: #FAFAFA;
+  text-align: center;
+}
 
-
-
-
-
-
+footer span {
+  color: #C0BFC3;
+  font-size: 12px;
+  font-weight: 600;
+}
 
  /*=================================
   footer styling ends here
 =================================*/ 
 
 /*media query starts*/
-/*media query for 995px starts here*/
+/*media query for 1024px starts here*/
+@media only screen and (max-width: 1024px) {
+  .details-container li div { padding-bottom: 6%; }
+  .image img { height: 320px; }
+
+  .firstname,
+  .email,
+  .message {
+    padding: 10px 6px;
+    font-size: 10px;
+  }
+
+  .msgerr { font-size: 9px; }
+  .err { font-size: 9px; }
+}  
+
 @media only screen and (max-width: 995px) {
+  .magna-container .wrapper { flex-wrap: wrap; }
 
+  .magnaleft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 100%;
+  }
 
+  .magnaleft h3,
+  .magnaleft p { text-align: center; }
 
+  .magnaright {
+    padding-left: 17%;
+    margin-top: 54px;
+    border-left: none;
+    flex-basis: 100%;
+  }
+
+  .magnaright li { font-size: 16px; }
+  .magnaright li:before { padding-left: 0; }
+  .orci-container .wrapper { flex-wrap: wrap; }
+
+  .orcileft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 100%;
+  }
+
+  .socialmedia {
+    margin-top: 44px;
+    padding-left: 18%;
+    border-left: none; 
+    flex-basis: 100%;
+  }
+
+  .orcileft p { text-align: center; }
+
+  form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  form > :first-child, form > :nth-child(2) {
+    width: 100%;
+    display: block;
+  }
+
+  .firstname {
+    width: 100%;
+    margin: 0;
+  }
+
+  .out2 { margin-left: 0; }
+  .message { width: 100%; }
+
+  .email { 
+    width: 100%;
+    margin:28px 0 0;
+  }
+
+  .firstname-err,
+  .email-err { padding-left: 0; }
+
+}
+
+@media only screen and (max-width: 767px) {
+  .welcome .wrapper { flex-wrap: wrap; }
+  .welcomeleft { flex-basis: 100%; }
+  h2 { text-align: center; }
+
+  .welcomeright {
+    margin-top: 35px;
+    border-left: none; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 100%; 
+  }
+
+  .welcomeright p { text-align: center; }
+  .details-container li { flex-wrap: wrap; }
+  .details-container .image { flex-basis: 100%; }
+
+  .details-container li div {
+    text-align: center;
+    flex-basis: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .magnaright { padding-left: 7%; }
+  footer span { text-align: center; }
 }  
